@@ -46,27 +46,3 @@ Visit `127.0.0.1/admin` and login with the superuser account credentials, create
 
 To view dashboard
 Visit `127.0.0.1` after starting the server.
-
-To run tests
-<pre>
-make test
-</pre>
-
-The Scraping is automated to run, every sunday midnight. This requires installation of redis as a broker.
-start the redis server
-<pre>
-redis-server
-</pre>
-
-In another terminal, start the worker.
-<pre>
-make celery-worker
-</pre>
-
-In another terminal, start the beat.
-<pre>
-make celery-beat
-</pre>
-
-
-Developer :- Peter, reach him at `peterwade153@gmail.com`.
