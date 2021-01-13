@@ -23,23 +23,23 @@ pip install requirements.txt
 Run migrations with the command below
 
 <pre>
-make migrate
+python manage.py migrate
 </pre>
 
 Create a superuser to access to the admin page, run the command to register.
 <pre>
-make superuser
+python manage.py createsuperuser
 </pre>
 
 To crawl properties with the command below
 
 <pre>
-make crawl
+python manage.py crawl
 </pre>
 
 To view the crawled properties, run the server
 <pre>
-make start
+python manage.py runserver
 </pre>
 
 Visit `127.0.0.1/admin` and login with the superuser account credentials, created earlier. Properties can also be added / removed from here
